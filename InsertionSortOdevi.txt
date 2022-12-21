@@ -1,0 +1,27 @@
+[22,27,16,2,18,6] ==> Selection Sort
+
+n = Arrayın toplam eleman sayısı
+
+1. En küçük elemanı buluyoruz ve başa yazıyoruz
+[2,27,16,22,18,6] => n 
+
+2. Sonra geri kalan elamanlar arasında en küçüğünü bulup yerini değiştiriyoruz.
+[2,6,16,22,18,27] => (n-1) kadar işlem yapıldı
+
+3. 2. Adımı tekrarlıyoruz. Kalan elemanlar arasında en küçük eleman bulunduğumuz eleman olduğu için dokumuyoruz.
+[2,6,16,22,18,27]
+
+4. 2. Adım dizinin son elemanına kadar tekrarlıyoruz. Son eleman için işlem sayısı 1'dir.
+
+İşlem sayısı = n + (n-1) + (n-2) + ... + 1 = n(n+1) / 2
+
+Algoritmanın BigO gösterimi dominant faktöre göre alınır. Bu algoritmada dominant faktör n²'dir.
+
+BigO gösterimi = O(n²) olur
+
+Örnek: [7,3,5,8,2,9,4,15,6] Selection Sorta göre ilk 4 adımı yazınız.
+
+1. [2,3,5,8,7,9,4,15,6] => n
+2. [2,3,5,8,7,9,4,15,6] => Değişim yok
+3. [2,3,4,8,7,9,5,15,6] => (n-2)
+4. [2,3,4,5,7,9,8,15,6] => (n-3)
